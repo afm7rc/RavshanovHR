@@ -1,3 +1,5 @@
-TOKEN = "7839561083:AAG5j_UXdOdeOYEh07sATgvvOigFm56b9JY"
-ADMINS = {1163250764}
-SUPER_ADMIN = 1163250764
+import os
+
+TOKEN = os.getenv("TOKEN")
+ADMINS = {int(os.getenv("ADMINS", "1163250764"))}  # Standart qiymat qo'shish mumkin
+SUPER_ADMIN = int(os.getenv("SUPER_ADMIN", "1163250764"))  # Standart qiymat qo'shish mumkin
