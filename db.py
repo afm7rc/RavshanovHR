@@ -9,10 +9,10 @@ def connect_db():
     try:
         # MySQL ulanishini yaratish
         db_connection = mysql.connector.connect(
-            host="localhost",
-            user="RavshanovHR",
-            password="A&r28012003",
-            database="RavshanovHRbotDATA"
+            host="DB_HOST",
+            user="DB_USER",
+            password="DB_PASSWORD",
+            database="DB_NAME"
         )
         return db_connection
     except Exception as e:
